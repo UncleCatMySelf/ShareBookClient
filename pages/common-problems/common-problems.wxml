@@ -1,0 +1,51 @@
+<view class="comm_container">
+    <view class="comm_item">
+      <view class="common_title" bindtap="onToggle">扫码借书不开锁怎么办</view>
+      <view class="common_info  {{item_isExpanded? 'collapse' : 'expand'}}">
+        如果扫码之后书柜没有自动开锁，墨书塾屋不会记录您的借书订单。若出现异常情况，您可以联系我们的人工客服：020- 26099062，墨书的工作人员在核实后会为您及时处理。
+      </view>
+    </view>
+    <view class="comm_item">
+      <view class="common_title " bindtap="onToggle2">我扫码还书已经将书放回去并锁好了柜子，但是还在我的在借图书中，怎么办</view>
+      <view class="common_info {{item_isExpanded2? 'collapse' : 'expand'}}">
+        如果已经将书放回柜子并锁好，在借图书中仍显示为未归还，您可以再次点击“还书”，等锁打开后用手重新锁上，等待系统自动处理。若出现异常情况，您可以联系我们的人工客服：020- 26099062，墨书的工作人员在核实后会为您及时处理。
+      </view>
+    </view>
+    <view class="comm_item">
+      <view class="common_title " bindtap="onToggle3"> 借阅的图书出现弄脏、弄破或丢失了怎么办</view>
+      <view class="common_info {{item_isExpanded3? 'collapse' : 'expand'}}">
+        如果是轻微的损坏，不会影响他人阅读的，您可以直接归还图书，不用承担任何赔偿责任。如果你借出的图书出现严重损坏，影响正常阅读，请第一时间拍照反馈，请您及时联系我们的人工客服：020-26099062，墨书的工作人员会根据实际情况协助处理。
+      </view>
+    </view>
+    <view class="comm_item">
+      <view class="common_title " bindtap="onToggle4"> 为什么归还后，仍然提示图书借阅中</view>
+      <view class="common_info {{item_isExpanded4? 'collapse' : 'expand'}}">
+      如果图书确定归还后，提示图书借阅中，请刷新网络状态。若仍然无法解决，请联系我们人工客服：020-26099062；
+      </view>
+    </view>
+    <view class="comm_item">
+      <view class="common_title " bindtap="onToggle5"> 图书押金规则</view> 
+      <view class="common_info {{item_isExpanded5? 'collapse' : 'expand'}}">
+    押金充值
+第一次使用图书借阅，需交纳押金50元，后续若余额低于50元，则需要将账户余额充值不低于50元。
+押金提现 
+   有未归的图书时，不能进行提现操作。归还图书后，可以随时进行提现操作，约0-5个工作日退还到充值账户。若账户内余额不足，则会产生欠费（为负值）；欠费后会导致你不能退还押金以及再次用车，因此请及时充值账户余额。
+      </view>
+    </view>
+    <view class="comm_item">
+      <view class="common_title " bindtap="onToggle6"> 图书借阅如何计费  </view>
+      <view class="common_info {{item_isExpanded6? 'collapse' : 'expand'}}">
+     图书借阅通过按天计费规则，从借出图书后开始计时，还回图书后结束计费。不足24小时按1天计算，图书统一按照0.3元/天。
+      </view>
+    </view>
+    <view class="comm_item">
+      <view class="common_title" bindtap="onToggle7">联系方式</view>
+      <view class="common_info {{item_isExpanded7? 'collapse' : 'expand'}} ">
+      客服热线：020-26099062，服务时间：8:00-20:00，QQ在线客服：763451054。
+如你不方便接听电话或进行语音沟通，欢迎你发送邮件至service@mobook.xin，我们将竭诚为您服务。
+      </view>
+    </view>
+    <view>
+      <image src="/imgs/common-problem/Customer_service.png" bindtap='contactTab' class="contact-btn"></image>
+    </view>
+</view>

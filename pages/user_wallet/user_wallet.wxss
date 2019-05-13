@@ -1,0 +1,58 @@
+
+.pagesc{
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  background:#EBEAEA;
+}
+
+.wallet_container{
+  height: 700rpx;
+}
+
+.wallet_header{
+  width:100%;
+  height:400rpx;
+}
+
+.wallet_item {
+  border-radius:10rpx;
+  line-height: 150rpx;
+  height:150rpx;
+  font-size:30rpx;
+  margin:24px;
+  display: flex;
+  background:#ffffff;
+}
+
+.text{
+  margin-left: 40rpx;
+  font-size:30rpx;
+  width: 550rpx;
+}
+
+.text .text_value{
+  font-size:40rpx;
+  color: #FF0000;
+}
+
+.item_btn{
+  float: right;
+  width: 100%;
+}
+
+.imgs{
+  float: right;
+  margin-top:40rpx;
+  margin-right: 40rpx;
+  width: 180rpx;
+  height: 70rpx;
+}
+
+.imgs2{
+  float: right;
+  margin-top:40rpx;
+  margin-right: 40rpx;
+  width: 140rpx;
+  height: 70rpx;
+}

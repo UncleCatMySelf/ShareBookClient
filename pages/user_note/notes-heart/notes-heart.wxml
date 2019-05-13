@@ -1,0 +1,16 @@
+ <template name='notesheartTemplate'> 
+  <view class='heart-container'>
+    <view class='heart'>
+    <!-- <block wx:for='{{imgs}}' wx:for-item='i'>
+      <image wx:if='{{i}}' src='/imgs/icon/heart.png' data-imgId='{{i}}' bindtap='imgTab'></image>
+      <image wx:else src='/imgs/icon/heart_off.png' data-imgId='{{i}}' bindtap='imgoffTab'></image>
+    </block> -->
+      <image bindtap="{{state == 0 ? 'img1fun' : ''}}" src="{{imgs.img1 == 0 ? '/imgs/icon/heart_off.png' : '/imgs/icon/heart.png'}}"></image> 
+      <image bindtap="{{state == 0 ? 'img2fun' : ''}}" src="{{imgs.img2 == 0 ? '/imgs/icon/heart_off.png' : '/imgs/icon/heart.png'}}"></image> 
+      <image bindtap="{{state == 0 ? 'img3fun' : ''}}" src="{{imgs.img3 == 0 ? '/imgs/icon/heart_off.png' : '/imgs/icon/heart.png'}}"></image> 
+      <image bindtap="{{state == 0 ? 'img4fun' : ''}}" src="{{imgs.img4 == 0 ? '/imgs/icon/heart_off.png' : '/imgs/icon/heart.png'}}"></image> 
+      <image bindtap="{{state == 0 ? 'img5fun' : ''}}" src="{{imgs.img5 == 0 ? '/imgs/icon/heart_off.png' : '/imgs/icon/heart.png'}}"></image>
+    </view>
+    <!--<text class='star-score'>{{score}}</text>-->
+  </view>
+</template>

@@ -1,0 +1,157 @@
+/* pages/user_note/notes-detail/notes-detail.wxss */
+
+@import '../notes-heart/notes-heart.wxss';
+
+.page{
+  width: 100%;
+  height: 100%;
+  background: #EBEAEA;
+}
+
+.head{
+  width: 100%;
+  height: 608rpx;
+  background: #fff;
+}
+
+.images{
+  align-content: center;
+  margin-top: 33rpx;
+  margin-bottom: 33rpx;
+  margin-left: 175rpx;
+  height: 542rpx;
+  width: 388rpx;
+  box-shadow: #EBEAEA 5rpx 5rpx 5rpx 5rpx;
+}
+
+.body{
+  width: 100%;
+  background: #fff;
+  box-shadow: #EBEAEA 0rpx 0rpx 5rpx 0rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 36rpx;
+  margin-left: 40rpx;
+  margin-top: 24rpx;
+  font-weight: 700;
+}
+
+.info{
+  font-size: 26rpx;
+  margin-left: 40rpx;
+  margin-top: 12rpx;
+  margin-right: 30rpx;
+}
+
+.body-date{
+  width: 702rpx;
+  height: 150rpx;
+  margin: auto;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: #EBEAEA 5rpx 5rpx 5rpx 5rpx;
+}
+
+.row-1{
+  display: flex;
+  flex-direction: row;
+}
+
+.message{
+  font-size: 28rpx;
+  width: 238rpx;
+  text-align: center;
+  align-self: center;
+}
+
+.message-value{
+  font-size: 28rpx;
+  width: 238rpx;
+  text-align: center;
+  align-self: center;
+  color: #FF4A26;
+}
+
+.hr{
+  width: 3rpx;
+  height: 75rpx;
+  background: #EBEAEA;
+  margin: auto auto;
+}
+
+.br{
+  height: 3rpx;
+  width: 702rpx;
+  background: #EBEAEA;
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+}
+
+.scoure{
+  width: 702rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.scuore-text{
+  font-size: 30rpx;
+  margin: auto auto;
+}
+
+.scoure-heart{
+  align-self: center;
+}
+
+.scoure-fen{
+  color: #3D3D3D;
+  font-size: 22rpx;
+  margin: auto auto;
+}
+
+.areatext{
+  display: flex;
+  width: 702rpx;
+  height: 230rpx;
+  margin: auto auto;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.form-css{
+  width: 650rpx;
+  height: 220rpx;
+  margin: auto auto;
+  margin-top: 20rpx;
+}
+
+.btn-submit{
+  display: flex;
+  width: 100%;
+  height: 150rpx;
+  background: #EBEAEA;
+}
+
+.dis-submit{
+  height: 0; overflow: hidden;
+}
+
+.submit{
+  width: 328rpx;
+  height: 80rpx;
+  margin: auto auto;
+}

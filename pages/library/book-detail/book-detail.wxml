@@ -1,0 +1,57 @@
+<import src='../stars/stars-template.wxml' />
+<view class='container-detail'>
+  <image class='head-img' src='{{book.bookImg}}' mode='aspectFill' />
+  <view class='head-img-hover'data-src="{{book.bookImg}}" catchtap="viewMoviePostImg">
+    <text class='main-title'>{{book.title}}</text>
+    <text class='sub-title'>{{book.pubdate}}</text>
+    <view class="like">
+      <text class="highlight-font">
+        {{book.pages}}
+      </text>
+      <text class="plain-font">
+        页数
+      </text>
+    </view>
+  </view>
+  <image class="movie-img" src="{{book.bookImg}}"  data-src="{{book.bookImg}}" catchtap="viewMoviePostImg"/>
+  <view class="summary">
+    <view class="flex-row">
+      <text class="mark">评分</text>
+      <template is="starsTemplate" data="{{stars:book.stars, score:book.average}}" />
+    </view>
+    <view class="flex-row">
+      <text class="mark">作者</text>
+      <text>{{book.author}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">译者</text>
+      <text>{{book.translator}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">价格</text>
+      <text>{{book.price}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">出版社</text>
+      <text>{{book.publisher}}</text>
+    </view>
+    <view class="flex-row">
+      <button class='mark'>立即借阅</button>
+    </view>
+  </view>
+  <view class="hr"></view>
+   <view class="synopsis">
+    <text class="synopsis-font">作者简介</text>
+    <text class="summary-content">{{book.authorIntro}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">内容简介</text>
+    <text class="summary-content">{{book.summary}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">目录</text>
+    <text class="summary-content">{{book.catalog}}</text>
+  </view>
+</view>

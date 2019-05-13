@@ -1,0 +1,45 @@
+/* pages/user/user.wxss */
+
+page{
+    height: 100%;
+    background-color: #EBEAEA;
+}
+
+.headUser{
+  width: 100%;
+  height: 500rpx;
+}
+
+.userImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.headUser image{
+  margin-top: 60rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 200rpx;
+}
+
+.phone{
+  margin-top: 60rpx;
+}
+
+.textInfo{
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.vText{
+  margin-left: 40rpx;
+}
+
+.vBtn{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 60rpx;
+}

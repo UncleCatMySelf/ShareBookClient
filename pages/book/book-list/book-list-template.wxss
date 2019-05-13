@@ -1,0 +1,76 @@
+@import '../heart/heart-template.wxss';
+
+.book-container {
+  display: flex;
+  width: 710rpx;
+  height: 284rpx;
+  margin-top: 24rpx;
+  margin-left: 23rpx;
+  border-radius:10rpx;
+  background: #ffffff;
+} 
+
+.book-message{ 
+  display: flex;
+  flex-direction: column;
+}
+
+.book-heart{
+  display: flex;
+  flex-direction: row; 
+}
+
+.book-img {
+  width: 182rpx;
+  height: 240rpx;
+  margin-left: 22rpx;
+  margin-top: 22rpx;
+}
+
+.book-title{
+  line-height: 70rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-left: 34rpx;
+}
+
+.tan{
+  display: flex;
+} 
+
+.book-author{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  margin-left: 34rpx;
+  width: 230rpx;
+}
+
+.book-num{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  margin-left: 34rpx;
+}
+
+.book-heart{
+  font-size: 28rpx;
+  line-height: 35rpx;
+  margin-left: 34rpx;
+}
+
+.book-summary{
+  display: flex;
+}
+
+.jieshao{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  margin-left: 34rpx;
+  width: 75rpx;
+}
+
+.int{
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  line-height: 35rpx;
+  width: 380rpx;
+}

@@ -1,0 +1,19 @@
+<!--pages/book/book.wxml-->
+<import src='book-list/book-list-template.wxml'/>
+  
+<view class='page'>
+  <view class='head'>
+    <view class='texts'>{{bookInfo.name}}</view>  
+    <view class='hr'></view>
+    <view class='texts'>可借书本：{{bookInfo.borrowNum}}本</view>
+    <view class='hr'></view>
+    <view class='texts'>可还书本：{{bookInfo.alseNum}}本</view>
+  </view>
+  <scroll-view scroll-y='true' scroll-x='false' bindscrolltolower='onScrollLower' class='grid-container'>
+    <block wx:for='{{bookes}}' wx:for-item='book'>
+      <view class='single-view-container'>
+        <template is='bookListTemplate' data='{{...book}}'/>
+      </view>
+    </block>
+  </scroll-view>
+</view>

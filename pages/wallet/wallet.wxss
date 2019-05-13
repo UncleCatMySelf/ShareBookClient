@@ -1,0 +1,64 @@
+/* pages/wallet/wallet.wxss */
+
+.horizon{
+  width: 660px;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 0rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.textInfo{
+  margin-top: 20rpx;
+  float: left;
+  width: 500rpx;
+}
+
+.textLast{
+  float: left;
+  width: 500rpx;
+}
+
+.v1{
+  margin-left: 50rpx;
+  font-size: 14px;
+}
+
+.v2{
+  margin-left: 50rpx;
+  font-size: 26px;
+}
+
+.Info{
+  margin-left: 50rpx;
+}
+
+.item{
+  flex-direction: row;
+  height: 130rpx;
+}
+
+page{
+    height: 100%;
+    background-color: #3D3D3D;
+}
+
+.btn{
+  width: 200rpx;
+  margin-top: 45rpx;
+}
+
+.img{
+  height: 400rpx;
+  margin-top: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  margin-top: 60rpx;
+}

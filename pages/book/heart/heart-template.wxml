@@ -1,0 +1,16 @@
+<template name='heartTemplate'> 
+  <view class='heart-container'>
+    <view class='heart'>
+    <block wx:for='{{stars}}' wx:for-item='i'>
+      <image wx:if='{{i}}' src='/imgs/icon/heart.png'></image>
+      <image wx:else src='/imgs/icon/heart_off.png'></image>
+    </block>
+      <!--<image src='/imgs/icon/heart.png'></image>
+      <image src='/imgs/icon/heart.png'></image>
+      <image src='/imgs/icon/heart.png'></image>
+      <image src='/imgs/icon/heart.png'></image>
+      <image src='/imgs/icon/heart.png'></image>
+    </view>-->
+    </view>
+  </view>
+</template>

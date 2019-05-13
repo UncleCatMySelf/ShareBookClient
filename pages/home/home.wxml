@@ -1,0 +1,37 @@
+!--pages/home/home.wxml-->
+  <view class="map_container">
+    <map id="map"show-location longitude="{{longitude}}" latitude="{{latitude}}" scale="17" controls="{{controls}}" bindcontroltap="controltap" markers="{{map.markers}}" bindmarkertap="markertap" wx:if="{{map}}">
+    </map>
+  </view>
+
+  <!--弹窗-->
+<cover-view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></cover-view>
+<cover-view class="modal-dialog" wx:if="{{showModal}}">
+  <cover-view class="modal-content"> 
+    <cover-view class="fault" bindtap='onFault'>故障申诉</cover-view>
+    <cover-view class="divider"></cover-view>
+    <cover-view class="common_pro" bindtap='onCommon'>常见问题</cover-view>
+  </cover-view> 
+  <cover-view class="Ai_service" bindtap='onService'>人工服务</cover-view>
+</cover-view>
+
+<cover-view class="modal-mask" bindtap="hideModal_2" catchtouchmove="preventTouchMove" wx:if="{{showModal_2}}"></cover-view>
+<cover-view class="modal-dialog" wx:if="{{showModal_2}}" bindtap='onBookSrc'>
+  <cover-view class="modal-content">
+    <cover-view class="modal-header">
+      <cover-view class='book-house'>书屋名称:{{marker.data.houseName}}</cover-view>
+      <cover-view class='book-address'>地址:{{marker.data.shopAddress}}</cover-view>
+    </cover-view>
+      <!-- <cover-view class="hr hr1"></cover-view> -->
+    <cover-image class="modal_home_img" src="/imgs/home/logo.png"></cover-image>
+  </cover-view>
+  <cover-view class="modal-bottom">
+    <cover-view class="borrow_msg">可借书本：{{marker.data.bookNum}}本
+    </cover-view>
+    <cover-view class="hr"></cover-view>
+    <cover-view class="return_msg">可还书本：{{marker.data.backNum}}本
+    </cover-view>
+  </cover-view>
+  </cover-view>
+
+

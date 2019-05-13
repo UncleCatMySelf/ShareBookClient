@@ -1,0 +1,11 @@
+@import '../notes/user_note_template.wxss';
+
+.single-view-container{
+  float: left;
+  margin-bottom: 0rpx;
+}
+
+.grid-container{
+  height: 1300rpx;
+  margin: 0rpx;  
+} 

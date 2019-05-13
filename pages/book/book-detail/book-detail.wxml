@@ -1,0 +1,104 @@
+<!--pages/book/book-detail/book-detail.wxml-->
+
+<view>
+  <view class='head'>
+    <image class='images' src='{{bookInfo.image}}'></image>
+  </view>
+ 
+  <view class="detail-bottom-box">
+    <view class="tabs-box"> 
+
+      <block wx:for="{{['详情','书评']}}">
+
+        <view class="tabs-item {{currentTabsIndex==index?'selected':''}}" bindtap="onTabsItemTap" data-index="{{index}}">
+          {{item}}
+        </view>
+
+      </block>
+
+    </view> 
+    <view class="product-detail-box">
+
+      <view class="product-detail-imgs" hidden="{{currentTabsIndex!=0}}">
+
+        <view class='imgs-head'>
+          <text class='title'>{{bookInfo.title}}</text>
+          <text class='info'>{{bookInfo.oneword}}</text>
+          <text class='price'>￥{{bookInfo.price}}</text> 
+          <view class='imgs-head-heart'> 
+            <view class='heart-to'>
+              <text class='zhishu'>推荐指数：</text>
+              <import src='../heart/heart-template.wxml'/>
+              <template is='heartTemplate' data='{{stars:stars}}'/>
+            </view>
+            <view class='num'>
+              借阅人数：<text class='num-value'>{{bookInfo.num}}</text>人
+            </view>
+          </view>
+        </view>
+
+        <view class='imgs-message'> 
+          <view class='message-view'>
+            <text class='message'>作者：{{author}}</text>
+          </view>
+          <view class='message-view-last'> 
+            <text class='message'>ISBN：{{bookInfo.isbn}}</text>
+            <text class='message'>出版日期：{{bookInfo.pudate}}</text>
+          </view>
+        </view>
+
+        <view class='book-summary'>
+          <view class='message-title'>
+            内容简介 
+          </view>
+          <view class='message-summary'>
+            {{summary}}
+          </view>
+        </view>
+
+        <!-- <view class='book-summary'>
+          <view class='message-title'>
+            内容
+          </view>
+          <view class='message-summary'>
+            {{bookInfo.content}}
+          </view>
+        </view> -->
+
+      </view>
+
+      <view class="product-detail-properties" hidden="{{currentTabsIndex!=1}}">
+      <block wx:for='{{reviews}}' wx:for-item='review'>
+        <view class='comments'> 
+          <view class='heart-to-comments'>
+              <text class='zhishu-comments'>推荐指数：</text>
+              <import src='../heart/heart-template.wxml'/>
+              <template is='heartTemplate' data='{{stars:review.stars}}'/>
+            </view>
+          <text class='comments-message'>{{review.content}}</text>
+          <view class='comment-user'>
+            <text class='comments-message-user'>用户：{{review.userName}}</text>
+            <text class='comments-message-date'>时间：{{review.date}}</text>
+          </view>
+        </view>
+      </block>
+        <!-- <view class='comments'>
+          <view class='heart-to-comments'>
+              <text class='zhishu-comments'>推荐指数：</text>
+              <import src='../heart/heart-template.wxml'/>
+              <template is='heartTemplate' data='{{hearts:hearts}}'/>
+            </view>
+          <text class='comments-message'>《撒哈拉的故事》主要描述了三毛和荷西在撒哈拉沙漠生活时的所见所闻，与当地相识朋友的故事每个故事都透露出这个隐忍女子对生活的热爱和...</text>
+          <view class='comment-user'>
+            <text class='comments-message-user'>用户：长草的蘑菇</text>
+            <text class='comments-message-date'>时间：2018-1-19</text>
+          </view>
+        </view>
+         -->
+      </view>
+    </view>
+  </view>
+</view>
+<view class='but-img'> 
+    <image class='button' bindtap='alsoTap' src='/imgs/book/button.png'></image>
+</view>

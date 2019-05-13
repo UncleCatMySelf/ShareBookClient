@@ -1,0 +1,4 @@
+<!--pages/library/library.wxml-->
+<view class='title'><text>欢迎进入{{libraryName}}</text></view>
+<import src='book-grid/book-grid-template.wxml' />
+<template is='movieGridTemplate' data='{{books}}'/> 

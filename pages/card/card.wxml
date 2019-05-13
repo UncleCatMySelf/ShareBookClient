@@ -1,0 +1,49 @@
+<!--pages/card/card.wxml-->
+
+<view class='page'> 
+  <view class='head'> 
+    <image src='/imgs/card/card.png' class='head_img'></image>
+    <image src='/imgs/card/card.png' class='img'></image>
+    <image src="{{userCardinfo.data.imgYesNo == 'yes'?'/imgs/card/card_yes.png':'/imgs/card/card_no.png'}}" class='img_no_yes'></image><!--/imgs/card/card_yes.png-->
+  </view>
+  <view class='body'>
+    <view class='message'>
+      <view class='text'>
+        {{userCardinfo.data.message}}<!--到期日期：2018-2-3-->
+      </view>
+      <view class='img_page'>
+        <image class='open_yes_no' bindtap='wechatPayTap' src="{{userCardinfo.data.openYesNo == 'yes'?'/imgs/card/agen.png':'/imgs/card/open.png'}}"></image><!--/imgs/card/agen.png-->
+      </view>
+    </view>
+    <view bindtap='monthTap'>
+      <view class='onoff' data-id='5'>
+        <image data-id='5' class='img_on_off' src="{{changs == 5?'/imgs/card/on.png':'/imgs/card/off.png'}}"></image>
+        <view data-id='5' class="{{changs == 5?'text_message_while':'text_message_black'}}">
+          <view data-id='5'>
+            <text data-id='5' class='yueka'>月卡</text>
+            <text data-id='5' class='month'>(1个月)</text>
+          </view>
+          <view data-id='5' class='yuan_all'>
+            <text data-id='5' class='yuan'>5元</text>
+            <text data-id='5' class='month'>50元</text>
+            <text data-id='5' class='heng'>——</text>
+          </view>
+        </view>
+      </view>
+      <view class='onoff1' data-id='9'>
+        <image data-id='9' class='img_on_off' src="{{changs == 9?'/imgs/card/on.png':'/imgs/card/off.png'}}"></image>
+        <view data-id='9' class="{{changs == 9?'text_message_while':'text_message_black'}}">
+          <view data-id='9'>
+            <text data-id='9' class='yueka'>季卡</text>
+            <text data-id='9' class='month'>(3个月)</text>
+          </view>
+          <view data-id='9' class='yuan_all_ji'>
+            <text data-id='9' class='yuan'>9.9元</text>
+            <text data-id='9' class='month'>100元</text>
+            <text data-id='9' class='heng'>——-</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

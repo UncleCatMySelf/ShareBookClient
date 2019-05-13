@@ -1,0 +1,17 @@
+<template name="notesTemplate">
+  <view class="note_container" bindtap='toMyReadTap' data-id='{{hostryId}}' data-bookId="{{bookId}}" data-state='{{states}}'>
+    <view>
+      <text class="label">时间:</text> <text>{{startTime}} 一一 {{endTime}}</text>
+    </view>
+    <view>
+      <text class="label">书名:</text> <text>{{bookName}}</text>
+    </view>
+    <view>
+      <text class="label ">借阅天数:</text> <text class="time">{{dates}}天</text> 
+      <text class="label">借阅费用:</text> <text>{{money}}</text>
+    </view>
+    <view>
+      <text class="label ">书评:</text><text>{{review}}</text>
+    </view>
+  </view>
+</template>

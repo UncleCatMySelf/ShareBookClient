@@ -1,0 +1,4 @@
+<!--pages/user_note/user_note.wxml-->
+
+<import src='notes-grid/user-grid-template.wxml' />
+<template is="noteGridTemplate" data='{{books}}' />

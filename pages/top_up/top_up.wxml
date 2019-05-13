@@ -1,0 +1,34 @@
+<view class='pages'>
+  <view class='head'>
+    <view class="topUp_title"><text class='text'>充值方式</text></view>
+    <view class="topUp_wechat">                                                           
+      <image class="checked_img" src="/imgs/top_up/checked.png"></image>
+      <text>微信支付</text>
+    </view>
+  </view>
+  <view class='body_all'>
+    <view class='body'>
+    <view class="topUp_lines_title"><text class='text_v1'>——请选择充值额度——</text></view>
+    <view class="topUp_lines_img" bindtap="selectAmount">
+      <!--<button wx:for="{{amoutList}}" data-id="{{index}}"class="{{curSelected ==index?'selected':''}}">
+      {{item}}
+      </button>-->
+      <image data-id='5' class='img' src="{{curSelected == 5?'/imgs/top_up/Recharge5.png':'/imgs/top_up/Recharge5_0.png'}}"></image>
+      <image data-id='10' class='img' src="{{curSelected == 10?'/imgs/top_up/Recharge1.png':'/imgs/top_up/Recharge1_0.png'}}"></image>
+      <image class='img_0'></image>
+      <image data-id='20' class='img' src="{{curSelected == 20?'/imgs/top_up/Recharge2.png':'/imgs/top_up/Recharge2_0.png'}}"></image>
+      <image data-id='50' class='img' src="{{curSelected == 50?'/imgs/top_up/Recharge50.png':'/imgs/top_up/Recharge50_0.png'}}"></image>
+    </view>
+  </view>
+  <view class='floot'>
+    <view class="topUp_instructions">
+      <image class="instructions" src="/imgs/top_up/Explain.png"></image>
+      <text>说明</text>
+      <view>
+        <image class="topUp_btn" src="/imgs/top_up/Recharge.png" bindtap='sublime_topUpTap'></image>
+      </view>
+      <view class='floot_v1'></view>
+    </view>
+  </view>
+  </view>
+</view>

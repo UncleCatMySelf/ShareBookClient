@@ -1,0 +1,29 @@
+/*my-note  */
+page{
+  background:#EAEBEB;
+  font-family: "黑体",SimHei,"Microsoft YaHei";
+}
+.note_container{
+  width: 600rpx;
+  margin: 24rpx;  
+  border:1px solid #eee;
+  border-radius: 15rpx ;
+  padding:24rpx 44rpx;
+  background:#fff;
+}
+text{
+   font-size:24rpx;
+    padding:0 4rpx;
+    margin:20rpx 0;
+    color:#555;
+    white-space: 2rpx;
+}
+.label{
+  display:inline-block;
+  font-size:26rpx;
+  color:#333;
+  font-weight: 700;
+} 
+.time{
+  margin-right:50rpx;
+}

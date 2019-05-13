@@ -1,0 +1,29 @@
+<!--pages/user/user.wxml-->
+
+<view class='container'>
+  <view class='headUser'>
+    <view class='userImg'><image src="{{userInfo.avatarUrl}}"></image></view>
+    <view class='userImg'><text class="phone">{{userInfo.nickName}}</text></view>
+    <view class='textInfo'>
+      <text class='vText'>借阅：X本</text>
+      <text class='vText'>借阅：X天</text>
+      <text class='vText'>等级：**</text>
+    </view>
+  </view>
+
+  <view class='vBtn'>
+    <button bindtap='myWallet'>我的钱包</button>
+  </view>
+
+  <view class='vBtn'>
+    <button bindtap='mySecurities'>我的读券</button>
+  </view>
+
+  <view class='vBtn'>
+    <button bindtap='myRead'>我的读记</button>
+  </view>
+
+  <view class='vBtn'>
+    <button bindtap='helpCenter'>帮助中心</button>
+  </view>
+</view>

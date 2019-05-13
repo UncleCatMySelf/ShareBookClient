@@ -1,0 +1,24 @@
+<!--pages/wallet/wallet.wxml-->
+
+<view class='container'>
+  <view class='img'>
+    <image src='/imgs/brackground.png'></image>
+  </view>
+
+  <view class='content'>
+    <view class='horizon'></view>
+    <view class='item'>
+      <view class='textInfo'><text class='Info'>购买月卡</text></view>
+      <view><button class='btn'>购买</button></view>
+    </view>
+    <view class='horizon'></view>
+    <view class='item'>
+      <view class='textLast'>
+        <view class='v1'><text>余额</text></view>
+        <view class='v2'><text>0.00</text></view>
+      </view>
+      <button class='btn'>充值</button>
+    </view>
+    <view class='horizon'></view>
+  </view>
+</view>

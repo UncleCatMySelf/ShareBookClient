@@ -1,0 +1,59 @@
+page{
+  background-color:#EBEAEA;
+}
+.comm_container{
+  color:#333;
+  font-size:30rpx;
+}
+
+.comm_item{
+  width: 94%;
+  border-radius:10rpx;
+  margin:40rpx auto 40rpx;
+  background:#ffffff;
+}
+
+.common_title{
+  line-height: 80rpx;
+  font-size:32rpx;
+  font-weight: 200;
+  color:#333;
+  margin:16rpx 0 24rpx;
+  margin-left: 20rpx;
+}
+
+.common_info{
+  padding:0 32rpx 30rpx;
+  text-indent: 2em;
+  white-space: 3rpx;
+  letter-spacing: 3rpx;
+  line-height: 32rpx;
+}
+
+.comm_container image{
+  width:360rpx;
+  height:88rpx;
+  margin: 26rpx 195rpx 36rpx;
+}
+
+.bold{
+  font-weight: 700;
+  color:#010101;
+  letter-spacing: 2rpx;
+  text-indent: 0;
+  display: block;
+}
+
+.expand{
+  display:block;
+}
+
+.collapse{
+  display:none;
+}
+
+.contact-btn{
+  position: fixed;
+  bottom:0;
+  margin-left:180rpx;
+}

@@ -1,0 +1,11 @@
+<import src='../notes/user_note_template.wxml' />
+
+<template name="noteGridTemplate">
+  <scroll-view scroll-y='true' scroll-x='false' bindscrolltolower='onScrollLower' class='grid-container'>
+    <block wx:for='{{books}}' wx:for-item='book'>
+      <view class='single-view-container'>
+        <template is='notesTemplate' data='{{...book}}' />
+      </view>
+    </block>
+  </scroll-view>
+</template> 

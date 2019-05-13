@@ -1,0 +1,34 @@
+<view>
+  <view class="user-container">
+    <image src='/imgs/user-message/banner1.png' class="bg_flur"></image>
+    <view class="author">
+      <image class="user-portrait" src='{{userInfo.avatarUrl}}'></image>
+       <text class="author-text">{{userInfo.nickName}}</text> 
+      <!--<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>-->
+    </view>
+    <view class="user-info">
+      <text>阅读:<text class="book_num mr" >{{userMessage.data.bookNum}}本</text></text>
+      <text>借阅:<text class="book_date mr">{{userMessage.data.allTime}}天</text></text>
+      <text>等级:<text  class="user_level mr">{{userMessage.data.title}}</text></text>
+    </view>
+  </view>
+  <view class="user-btn">
+    <view class="wallet btn-item" bindtap='onUserTopUp'>
+      <image src="/imgs/user-message/wallet.jpg"></image>
+       <view>我的钱包</view>
+    </view>
+    <view class="card btn-item" bindtap='onCardBag'>
+       <image src="/imgs/user-message/card.jpg"></image>
+        <view >我的卡包</view>
+    </view>
+    <view class="btn-item" bindtap="onUserNoteSrc"> 
+       <image src="/imgs/user-message/read.jpg"></image>
+        <view>我的读记</view>
+    </view>
+    <view class="btn-item" bindtap='onCommon'>
+      <image src="/imgs/user-message/Help.png"></image>
+       <view>帮助与反馈</view>
+    </view>
+  </view>
+  <!--<image src='/imgs/user-message/banner1.png' class="user-banner"></image>-->
+</view>

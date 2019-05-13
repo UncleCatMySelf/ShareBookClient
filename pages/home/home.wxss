@@ -1,0 +1,231 @@
+.foot{
+  width: 100%;
+  height: 142rpx;
+  background-color: #3D3D3D;
+}
+
+.map_container {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0; 
+  width:100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+map{
+  width:100%;
+  height:100%;
+}
+
+page{
+    height: 100%;
+    background-color: #3D3D3D;
+}
+
+.font-img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 27rpx;
+  margin-left: 335rpx;
+}
+
+.time-hide {
+  display: none;
+}
+
+.time-show {
+  margin-top: 860rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;  
+  background-color: #3D3D3D;
+  color: white;
+  height: 300rpx;
+  display: block;
+}
+
+.top{
+  height: 180rpx;
+  width: 100%;
+}
+
+.floot-book{
+  width: 340rpx;
+  float: left;
+}
+
+.top-text{
+  float: left;
+  width: 450rpx;
+}
+
+.top-image{
+  float: left;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #222;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9999;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 700rpx;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: 24rpx 24rpx;
+  border: 1rpx solid #999;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+ 
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+  text-align: center;
+}
+
+.fault {
+  width: 50%;
+  border-right: 1px solid #dedede;
+  line-height: 86rpx;
+}
+
+.common_pro {
+  width: 50%;
+  line-height: 86rpx;
+}
+.divider{
+height:100rpx;
+width:1px;
+background-color:#dedede;
+}
+.Ai_service {
+  text-align: center;
+  height: 150rpx;
+  line-height: 150rpx;
+  border-top: 1px solid #dedede;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+/* 书屋信息弹出框  */
+modal-content_2{
+  display: flex;
+  flex-direction: row;
+  font-size:24rpx;
+  border:1px solid #999;
+}
+
+.modal-header{
+  font-size:40rpx;
+  font-weight: 600;
+  width: 600rpx;
+  height:180rpx;
+  display: flex;
+  flex-direction:column;
+  border-right:1px solid #999;
+  color: #000000;
+}
+
+.book-house{
+  font-size:32rpx;
+  font-weight: 600;
+}
+
+.book-address{
+  font-size:32rpx;
+  font-weight: 600;
+}
+
+.modal-header cover-view{
+   padding:20rpx 20rpx; 
+   white-space: normal;
+  font-size:24rpx;
+  color:#999;
+}
+
+.modal_home_img{ 
+  width:230rpx;
+  height:180rpx;
+}
+
+.modal-bottom{
+  display:flex;
+  flex-direction:row;
+  border-top:1px solid #999;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:24rpx; 
+  align-items: center;                    
+}
+.modal-bottom>cover-view{
+  width:50%;
+   
+}
+.modal-bottom .borrow_msg,.modal-bottom .return_msg{
+  margin:10rpx auto;
+  padding-right:20px;
+  letter-spacing: 2rpx;
+  text-align: center;
+  vertical-align: center;
+  line-height: 100rpx;
+}
+.mark_num{
+   font-size:32rpx;
+   display: inline;
+  vertical-align: center;
+}
+.hr{
+  width:1px;
+  height:100rpx;
+  background: #999;
+}
+
+.hr1{
+  height:200rpx;
+}
+.return_msg{
+  margin-left:24rpx;
+}

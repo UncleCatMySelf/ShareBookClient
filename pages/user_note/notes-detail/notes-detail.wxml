@@ -1,0 +1,51 @@
+<!--pages/user_note/notes-detail/notes-detail.wxml-->
+<view class='page'>
+ 
+  <view class='head'>
+    <image class='images' src='{{book.image}}'></image>
+  </view>
+
+  <view class='body'>
+    <text class='title'>{{book.bookTitle}}</text>
+    <text class='info'>{{summary}}</text>
+    <view class='body-date'>
+      <view class='row-1'>
+        <view class='message'>阅读时长</view>
+        <view class='hr'></view>
+        <view class='message'>阅读字数</view>
+        <view class='hr'></view>
+        <view class='message'>借阅费用</view>
+      </view>
+      <view class='br'></view>
+      <view class='row-1'>
+        <view class='message-value'>{{book.date}}(天)</view>
+        <view class='hr'></view>
+        <view class='message-value'>{{book.pages}}(字)</view>
+        <view class='hr'></view>
+        <view class='message-value'>{{book.fee}}(元)</view>
+      </view>
+    </view> 
+  </view>
+
+  <view class='scoure'>
+    <view class='scuore-text'>书籍推荐指数：</view>
+    <view class='scoure-heart'>
+      <import src='../notes-heart/notes-heart.wxml'/>
+      <template is='notesheartTemplate' data='{{imgs:imgs,state:state}}'/>
+    </view>
+    <view class='scoure-fen'>(点亮你心中的评分)</view>
+  </view>
+
+  <view class='areatext'>
+    <view class='form-css'>
+      <form>
+        <textarea disabled="{{state == 0 ? '' : 'true'}}" bindinput='bindTextAreaBlur' id='tarea' placeholder="分享阅读心得:" value='{{book.message}}'></textarea>
+      </form>
+    </view>
+  </view>
+
+  <view class="{{state == 0 ? 'btn-submit' : 'dis-submit'}}">
+    <image class='submit' bindtap='submitTab' src='/imgs/read/submit.png'></image>
+  </view>
+  
+</view>

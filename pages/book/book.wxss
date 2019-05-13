@@ -1,0 +1,41 @@
+/* pages/book/book.wxss */
+@import 'book-list/book-list-template.wxss';
+
+.page{
+  height: 100%;
+  width: 100%;
+  background:#EBEAEA;
+}
+
+.grid-container{
+  height: 1300rpx;
+  margin: 0rpx;  
+} 
+
+.single-view-container{
+  float: left;
+  margin-bottom: 0rpx;
+}
+
+.head{
+  margin-left: 24rpx;
+  height: 80rpx;
+  width: 702rpx;
+  background: #ffffff;
+  border-radius:10rpx;
+}
+
+.texts{
+  font-size: 28rpx;
+  line-height: 80rpx;
+  width: 233rpx;
+  text-align: center;
+  float: left;
+}
+
+.hr{
+  float: left;
+  width:1px;
+  height:80rpx;
+  background: #999;
+}

@@ -1,0 +1,11 @@
+/* pages/library/library.wxss */
+@import 'book-grid/book-grid-template.wxss';
+ 
+.title{
+  background-color: #3D3D3D;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}

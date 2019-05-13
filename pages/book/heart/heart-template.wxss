@@ -1,0 +1,18 @@
+.heart-container{
+  display: flex;
+  flex-direction: row; 
+}
+
+.heart{
+  display: flex;
+  flex-direction: row;
+  height: 24rpx;
+  margin-right: 24rpx;
+  margin-top: 6rpx;
+}
+
+.heart image{
+  padding-left: 12rpx;
+  height: 23rpx;
+  width: 26rpx;
+}

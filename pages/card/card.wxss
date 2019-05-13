@@ -1,0 +1,150 @@
+/* pages/card/card.wxss */
+
+.page{
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  background:#EBEAEA;
+}
+
+.img{
+  position:absolute;
+  margin-top: 20rpx;
+  margin-left: 24rpx;
+  z-index: -98;
+  height: 360rpx;
+  width: 700rpx;
+}
+
+.head_img{
+  position:absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+  filter: blur(10px);
+  z-index: -99;
+  width:100%;
+  height:216px;
+}
+
+.img_no_yes{
+  margin-left: 578rpx;
+  margin-top: 95rpx;
+  width: 115rpx;
+  height: 56rpx;
+}
+
+.body{
+  margin-top: 300rpx;
+}
+
+.message{
+  display: flex;
+  width: 702rpx;
+  height: 150rpx;
+  background: #ffffff;
+  border-radius:10rpx;
+  margin-left: 24rpx;
+}
+
+.text{
+  width: 800rpx;
+  line-height: 150rpx;
+  height:150rpx;
+  font-size:30rpx;
+  margin-left: 30rpx;
+}
+
+.img_page{
+  float: right;
+  width: 100%;
+}
+
+.open_yes_no{
+  float: right;
+  margin-top: 45rpx;
+  margin-right: 30rpx;
+  width: 150rpx;
+  height: 65rpx;
+}
+
+.onoff{
+  float: left;
+  margin-left: 55rpx;
+  margin-top: 45rpx;
+  width: 290rpx;
+  height: 290rpx;
+}
+
+.onoff1{
+  margin-top: 45rpx;
+  margin-left: 55rpx;
+  float: left;
+  width: 290rpx;
+  height: 290rpx;
+}
+
+.img_on_off{
+  position:absolute;
+  width: 290rpx;
+  height: 290rpx;
+  z-index: -98;
+}
+
+.text{
+  display: flex;
+}
+
+.text_message_while{
+  margin-left: 50rpx;
+  margin-top: 70rpx;
+  color: #ffffff;
+}
+
+.text_message_black{
+  margin-left: 50rpx;
+  margin-top: 70rpx;
+}
+
+.yueka{
+  margin-top: 200rpx;
+  width: 100rpx;
+  height: 98rpx;
+  font-size: 46rpx;
+  line-height: 46rpx;
+}
+
+.yuan{
+  width: 100rpx;
+  height: 98rpx;
+  font-size: 46rpx;
+  line-height: 46rpx;
+}
+
+.month{
+  margin-top: 16rpx;
+  width: 80rpx;
+  position:absolute;
+  z-index: -97;
+  margin-left: 20rpx;
+}
+
+.heng{
+  margin-left: 20rpx;
+}
+
+
+.yuan_all{
+  position:absolute;
+  z-index: -97;
+  margin-top: 70rpx;
+  margin-left: 20rpx;
+}
+
+.yuan_all_ji{
+  position:absolute;
+  z-index: -97;
+  margin-top: 70rpx;
+  margin-left: 2rpx;
+}

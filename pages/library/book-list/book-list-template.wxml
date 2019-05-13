@@ -1,0 +1,21 @@
+<import src='../book/book-template.wxml' />
+<template name='movieListTemplate'>
+  <view class='movie-list-container'>
+    <view class='inner-container'>
+      <view class='movie-head'>
+        <text class='slogan'>{{cagetgoryTitle}}</text>
+        <view catchtap='onMoreTap' class='more' data-category='{{cagetgoryTitle}}'>
+          <text class='more-text'>更多</text>
+          <image class='more-img' src='/images/icon/arrow-right.png'></image>
+        </view>
+      </view>
+      <view class='movies-container'>
+      <block wx:for='{{books}}' wx:for-item='book'>
+        <template is='movieTemplate' data='{{...book}}'/>
+      </block>
+        <!-- <template is='movieTemplate' />
+        <template is='movieTemplate' /> -->
+      </view>
+    </view>
+  </view>
+</template>

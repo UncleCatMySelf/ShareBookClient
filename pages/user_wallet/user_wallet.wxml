@@ -1,0 +1,23 @@
+<view class="pagesc">
+  <image class="wallet_header" src='/imgs/wallet/wallet_1.png'></image>
+  <view class="wallet_container">
+    <view class="wallet_item">
+        <view class='text'>购买月卡</view>
+        <view class="item_btn" bindtap='cardTap'>
+          <image class='imgs' src='/imgs/wallet/wallet_2.png'></image>
+        </view>
+    </view>
+    <view class="wallet_item">
+        <view class='text'>余额 <text class='text_value'>{{userinfo.data.recharge}}</text> 元</view>
+        <view class="item_btn" catchtap='topUpSrc'>
+          <image  class='imgs2' src='/imgs/wallet/wallet_3.png'></image>
+        </view>
+    </view>
+    <view class="wallet_item">
+        <view class='text'>押金 <text class='text_value'>{{userinfo.data.deposit}}</text> 元</view>
+        <view class="item_btn" bindtap='depositTap'>
+          <image  class='imgs' src='/imgs/wallet/wallet_4.png'></image>
+        </view>
+    </view>
+  </view>
+</view>
