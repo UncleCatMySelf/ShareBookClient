@@ -2,8 +2,8 @@ import { Config } from 'config.js';
 
 class Token {
   constructor() {
-    this.verifyUrl = Config.restUrl + 'token/verify';
-    this.tokenUrl = Config.restUrl + 'token/gettoken';
+    this.verifyUrl = Config.restUrl + 'user/verify';
+    this.tokenUrl = Config.restUrl + 'user/get_token';
   }
 
   verify() { 
@@ -52,6 +52,7 @@ class Token {
             code: res.code
           },
           success: function (res) {
+            console.log(res);
             wx.setStorageSync('token', res.data.data[0].token);
             callBack && callBack(res.data.data[0].token);
           }

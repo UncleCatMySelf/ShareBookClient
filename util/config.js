@@ -4,6 +4,6 @@ class Config{
   }
 }
 
-Config.restUrl = 'https://***/api/v1/';
+Config.restUrl = 'http://localhost:8080/sharebook/api/v1/';
 
 export { Config };
