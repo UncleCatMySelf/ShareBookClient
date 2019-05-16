@@ -14,6 +14,7 @@ App({
     token.verify();
     var userinfo = new Userinfo();
     userinfo.verify();
+    console.log(111);
   }
   
 })

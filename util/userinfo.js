@@ -2,7 +2,7 @@ import { Config } from 'config.js';
 
 class Userinfo{
   constructor() {
-    this.save_user_info = Config.restUrl + 'token/save_user_info';
+    this.save_user_info = Config.restUrl + 'user/save_user_info';
   }
 
   verify(){

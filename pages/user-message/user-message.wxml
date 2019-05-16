@@ -4,7 +4,7 @@
     <view class="author">
       <image class="user-portrait" src='{{userInfo.avatarUrl}}'></image>
        <text class="author-text">{{userInfo.nickName}}</text> 
-      <!--<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>-->
+      <button open-type="getUserInfo">登录</button>
     </view>
     <view class="user-info">
       <text>阅读:<text class="book_num mr" >{{userMessage.data.bookNum}}本</text></text>
